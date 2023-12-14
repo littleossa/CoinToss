@@ -2,7 +2,6 @@
 //  CoinTossWidget.swift
 //  CoinTossWidget
 //
-//  Created by 平岡修 on 2023/12/14.
 //
 
 import WidgetKit
@@ -10,22 +9,21 @@ import SwiftUI
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), emoji: "😀")
+        SimpleEntry(date: Date())
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), emoji: "😀")
+        let entry = SimpleEntry(date: Date())
         completion(entry)
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
 
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, emoji: "😀")
+            let entry = SimpleEntry(date: entryDate)
             entries.append(entry)
         }
 
@@ -36,7 +34,6 @@ struct Provider: TimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let emoji: String
 }
 
 struct CoinTossWidgetEntryView : View {
@@ -46,9 +43,6 @@ struct CoinTossWidgetEntryView : View {
         VStack {
             Text("Time:")
             Text(entry.date, style: .time)
-
-            Text("Emoji:")
-            Text(entry.emoji)
         }
     }
 }
@@ -75,6 +69,6 @@ struct CoinTossWidget: Widget {
 #Preview(as: .systemSmall) {
     CoinTossWidget()
 } timeline: {
-    SimpleEntry(date: .now, emoji: "😀")
-    SimpleEntry(date: .now, emoji: "🤩")
+    SimpleEntry(date: .now)
+    SimpleEntry(date: .now)
 }
