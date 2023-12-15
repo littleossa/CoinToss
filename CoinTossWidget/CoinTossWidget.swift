@@ -77,7 +77,7 @@ struct CoinTossWidget: Widget {
         }
         .configurationDisplayName("Coin toss on a widget")
         .description("You can flip the coin to decide something on a widget.")
-        .supportedFamilies([.systemSmall, .systemMedium])
+        .supportedFamilies([.systemSmall])
     }
 }
 
