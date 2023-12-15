@@ -19,7 +19,6 @@
 		97566CE92B2BD3FA002DFA75 /* CoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97566CE82B2BD3FA002DFA75 /* CoinView.swift */; };
 		97566CEA2B2BD695002DFA75 /* CoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97566CE82B2BD3FA002DFA75 /* CoinView.swift */; };
 		97566CED2B2BE4B5002DFA75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97566C452B2B24AC002DFA75 /* Assets.xcassets */; };
-		97566CEF2B2CB712002DFA75 /* AnimationProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97566CEE2B2CB712002DFA75 /* AnimationProperties.swift */; };
 		97566CF22B2CB7FF002DFA75 /* CoinTossIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97566CF02B2CB7CD002DFA75 /* CoinTossIntent.swift */; };
 		97566CF52B2CBB64002DFA75 /* UserDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97566CF32B2CB8AC002DFA75 /* UserDefaultsStore.swift */; };
 /* End PBXBuildFile section */
@@ -61,7 +60,6 @@
 		97566C782B2B2593002DFA75 /* CoinTossWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTossWidget.swift; sourceTree = "<group>"; };
 		97566C7C2B2B2595002DFA75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97566CE82B2BD3FA002DFA75 /* CoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinView.swift; sourceTree = "<group>"; };
-		97566CEE2B2CB712002DFA75 /* AnimationProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationProperties.swift; sourceTree = "<group>"; };
 		97566CF02B2CB7CD002DFA75 /* CoinTossIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTossIntent.swift; sourceTree = "<group>"; };
 		97566CF32B2CB8AC002DFA75 /* UserDefaultsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,7 +108,6 @@
 			children = (
 				97566C412B2B24AB002DFA75 /* CoinTossApp.swift */,
 				97566C432B2B24AB002DFA75 /* ContentView.swift */,
-				97566CEE2B2CB712002DFA75 /* AnimationProperties.swift */,
 				97566CE82B2BD3FA002DFA75 /* CoinView.swift */,
 				97566C452B2B24AC002DFA75 /* Assets.xcassets */,
 				97566C472B2B24AC002DFA75 /* Preview Content */,
@@ -249,7 +246,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				97566CE92B2BD3FA002DFA75 /* CoinView.swift in Sources */,
-				97566CEF2B2CB712002DFA75 /* AnimationProperties.swift in Sources */,
 				97566C442B2B24AB002DFA75 /* ContentView.swift in Sources */,
 				97566C422B2B24AB002DFA75 /* CoinTossApp.swift in Sources */,
 			);
