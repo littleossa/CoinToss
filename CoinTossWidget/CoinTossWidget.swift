@@ -37,32 +37,47 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct CoinTossWidgetEntryView : View {
+    
+    @AppStorage(
+        UserDefaultsStore.Key.isAnimation.rawValue,
+        store: UserDefaultsStore.shared.userDefaults
+    )
+    var isAnimation = false
+    
+    @AppStorage(
+        UserDefaultsStore.Key.isCoinReversed.rawValue,
+        store: UserDefaultsStore.shared.userDefaults
+    )
+    var isReversed = false
+    
     var entry: Provider.Entry
 
+    var rotationAngle: Double {
+        isAnimation ? 360 : 0
+    }
+
     var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
+        Button(intent: CoinTossIntent(isTest: false)) {
+            CoinView(isReversed: isReversed)
+                .rotation3DEffect(.degrees(rotationAngle), axis: (x: 1, y: 1, z: 1))
+                .animation(.easeIn(duration: 0.5),
+                           value: isAnimation)
         }
+        .buttonStyle(.plain)
     }
 }
 
 struct CoinTossWidget: Widget {
     let kind: String = "CoinTossWidget"
-
+    
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            if #available(iOS 17.0, *) {
-                CoinTossWidgetEntryView(entry: entry)
-                    .containerBackground(.fill.tertiary, for: .widget)
-            } else {
-                CoinTossWidgetEntryView(entry: entry)
-                    .padding()
-                    .background()
-            }
+            CoinTossWidgetEntryView(entry: entry)
+                .containerBackground(for: .widget) {}
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Coin toss on a widget")
+        .description("You can flip the coin to decide something on a widget.")
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
 

@@ -11,23 +11,20 @@
 		97566C442B2B24AB002DFA75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97566C432B2B24AB002DFA75 /* ContentView.swift */; };
 		97566C462B2B24AC002DFA75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97566C452B2B24AC002DFA75 /* Assets.xcassets */; };
 		97566C492B2B24AC002DFA75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97566C482B2B24AC002DFA75 /* Preview Assets.xcassets */; };
-		97566C532B2B24AC002DFA75 /* CoinTossTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97566C522B2B24AC002DFA75 /* CoinTossTests.swift */; };
 		97566C722B2B2593002DFA75 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97566C712B2B2593002DFA75 /* WidgetKit.framework */; };
 		97566C742B2B2593002DFA75 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97566C732B2B2593002DFA75 /* SwiftUI.framework */; };
 		97566C772B2B2593002DFA75 /* CoinTossWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97566C762B2B2593002DFA75 /* CoinTossWidgetBundle.swift */; };
 		97566C792B2B2593002DFA75 /* CoinTossWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97566C782B2B2593002DFA75 /* CoinTossWidget.swift */; };
-		97566C7B2B2B2595002DFA75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97566C7A2B2B2595002DFA75 /* Assets.xcassets */; };
 		97566C7F2B2B2595002DFA75 /* CoinTossWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 97566C6F2B2B2593002DFA75 /* CoinTossWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		97566CE92B2BD3FA002DFA75 /* CoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97566CE82B2BD3FA002DFA75 /* CoinView.swift */; };
+		97566CEA2B2BD695002DFA75 /* CoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97566CE82B2BD3FA002DFA75 /* CoinView.swift */; };
+		97566CED2B2BE4B5002DFA75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97566C452B2B24AC002DFA75 /* Assets.xcassets */; };
+		97566CEF2B2CB712002DFA75 /* AnimationProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97566CEE2B2CB712002DFA75 /* AnimationProperties.swift */; };
+		97566CF22B2CB7FF002DFA75 /* CoinTossIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97566CF02B2CB7CD002DFA75 /* CoinTossIntent.swift */; };
+		97566CF52B2CBB64002DFA75 /* UserDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97566CF32B2CB8AC002DFA75 /* UserDefaultsStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		97566C4F2B2B24AC002DFA75 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 97566C362B2B24AB002DFA75 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 97566C3D2B2B24AB002DFA75;
-			remoteInfo = CoinToss;
-		};
 		97566C7D2B2B2595002DFA75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 97566C362B2B24AB002DFA75 /* Project object */;
@@ -57,26 +54,20 @@
 		97566C432B2B24AB002DFA75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		97566C452B2B24AC002DFA75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97566C482B2B24AC002DFA75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		97566C4E2B2B24AC002DFA75 /* CoinTossTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinTossTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		97566C522B2B24AC002DFA75 /* CoinTossTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTossTests.swift; sourceTree = "<group>"; };
 		97566C6F2B2B2593002DFA75 /* CoinTossWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CoinTossWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		97566C712B2B2593002DFA75 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		97566C732B2B2593002DFA75 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		97566C762B2B2593002DFA75 /* CoinTossWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTossWidgetBundle.swift; sourceTree = "<group>"; };
 		97566C782B2B2593002DFA75 /* CoinTossWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTossWidget.swift; sourceTree = "<group>"; };
-		97566C7A2B2B2595002DFA75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97566C7C2B2B2595002DFA75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97566CE82B2BD3FA002DFA75 /* CoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinView.swift; sourceTree = "<group>"; };
+		97566CEE2B2CB712002DFA75 /* AnimationProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationProperties.swift; sourceTree = "<group>"; };
+		97566CF02B2CB7CD002DFA75 /* CoinTossIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTossIntent.swift; sourceTree = "<group>"; };
+		97566CF32B2CB8AC002DFA75 /* UserDefaultsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		97566C3B2B2B24AB002DFA75 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		97566C4B2B2B24AC002DFA75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -99,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				97566C402B2B24AB002DFA75 /* CoinToss */,
-				97566C512B2B24AC002DFA75 /* CoinTossTests */,
 				97566C752B2B2593002DFA75 /* CoinTossWidget */,
 				97566C702B2B2593002DFA75 /* Frameworks */,
 				97566C3F2B2B24AB002DFA75 /* Products */,
@@ -110,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				97566C3E2B2B24AB002DFA75 /* CoinToss.app */,
-				97566C4E2B2B24AC002DFA75 /* CoinTossTests.xctest */,
 				97566C6F2B2B2593002DFA75 /* CoinTossWidgetExtension.appex */,
 			);
 			name = Products;
@@ -121,6 +110,8 @@
 			children = (
 				97566C412B2B24AB002DFA75 /* CoinTossApp.swift */,
 				97566C432B2B24AB002DFA75 /* ContentView.swift */,
+				97566CEE2B2CB712002DFA75 /* AnimationProperties.swift */,
+				97566CE82B2BD3FA002DFA75 /* CoinView.swift */,
 				97566C452B2B24AC002DFA75 /* Assets.xcassets */,
 				97566C472B2B24AC002DFA75 /* Preview Content */,
 			);
@@ -135,14 +126,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		97566C512B2B24AC002DFA75 /* CoinTossTests */ = {
-			isa = PBXGroup;
-			children = (
-				97566C522B2B24AC002DFA75 /* CoinTossTests.swift */,
-			);
-			path = CoinTossTests;
-			sourceTree = "<group>";
-		};
 		97566C702B2B2593002DFA75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,9 +138,10 @@
 		97566C752B2B2593002DFA75 /* CoinTossWidget */ = {
 			isa = PBXGroup;
 			children = (
+				97566CF02B2CB7CD002DFA75 /* CoinTossIntent.swift */,
 				97566C762B2B2593002DFA75 /* CoinTossWidgetBundle.swift */,
 				97566C782B2B2593002DFA75 /* CoinTossWidget.swift */,
-				97566C7A2B2B2595002DFA75 /* Assets.xcassets */,
+				97566CF32B2CB8AC002DFA75 /* UserDefaultsStore.swift */,
 				97566C7C2B2B2595002DFA75 /* Info.plist */,
 			);
 			path = CoinTossWidget;
@@ -184,24 +168,6 @@
 			productName = CoinToss;
 			productReference = 97566C3E2B2B24AB002DFA75 /* CoinToss.app */;
 			productType = "com.apple.product-type.application";
-		};
-		97566C4D2B2B24AC002DFA75 /* CoinTossTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 97566C652B2B24AC002DFA75 /* Build configuration list for PBXNativeTarget "CoinTossTests" */;
-			buildPhases = (
-				97566C4A2B2B24AC002DFA75 /* Sources */,
-				97566C4B2B2B24AC002DFA75 /* Frameworks */,
-				97566C4C2B2B24AC002DFA75 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				97566C502B2B24AC002DFA75 /* PBXTargetDependency */,
-			);
-			name = CoinTossTests;
-			productName = CoinTossTests;
-			productReference = 97566C4E2B2B24AC002DFA75 /* CoinTossTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		97566C6E2B2B2593002DFA75 /* CoinTossWidgetExtension */ = {
 			isa = PBXNativeTarget;
@@ -233,10 +199,6 @@
 					97566C3D2B2B24AB002DFA75 = {
 						CreatedOnToolsVersion = 15.1;
 					};
-					97566C4D2B2B24AC002DFA75 = {
-						CreatedOnToolsVersion = 15.1;
-						TestTargetID = 97566C3D2B2B24AB002DFA75;
-					};
 					97566C6E2B2B2593002DFA75 = {
 						CreatedOnToolsVersion = 15.1;
 					};
@@ -256,7 +218,6 @@
 			projectRoot = "";
 			targets = (
 				97566C3D2B2B24AB002DFA75 /* CoinToss */,
-				97566C4D2B2B24AC002DFA75 /* CoinTossTests */,
 				97566C6E2B2B2593002DFA75 /* CoinTossWidgetExtension */,
 			);
 		};
@@ -272,18 +233,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		97566C4C2B2B24AC002DFA75 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		97566C6D2B2B2593002DFA75 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97566C7B2B2B2595002DFA75 /* Assets.xcassets in Resources */,
+				97566CED2B2BE4B5002DFA75 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,16 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97566CE92B2BD3FA002DFA75 /* CoinView.swift in Sources */,
+				97566CEF2B2CB712002DFA75 /* AnimationProperties.swift in Sources */,
 				97566C442B2B24AB002DFA75 /* ContentView.swift in Sources */,
 				97566C422B2B24AB002DFA75 /* CoinTossApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		97566C4A2B2B24AC002DFA75 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				97566C532B2B24AC002DFA75 /* CoinTossTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,19 +259,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97566CEA2B2BD695002DFA75 /* CoinView.swift in Sources */,
+				97566CF52B2CBB64002DFA75 /* UserDefaultsStore.swift in Sources */,
 				97566C772B2B2593002DFA75 /* CoinTossWidgetBundle.swift in Sources */,
 				97566C792B2B2593002DFA75 /* CoinTossWidget.swift in Sources */,
+				97566CF22B2CB7FF002DFA75 /* CoinTossIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		97566C502B2B24AC002DFA75 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 97566C3D2B2B24AB002DFA75 /* CoinToss */;
-			targetProxy = 97566C4F2B2B24AC002DFA75 /* PBXContainerItemProxy */;
-		};
 		97566C7E2B2B2595002DFA75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 97566C6E2B2B2593002DFA75 /* CoinTossWidgetExtension */;
@@ -511,46 +457,6 @@
 			};
 			name = Release;
 		};
-		97566C662B2B24AC002DFA75 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2V4975L824;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.lilossa.CoinTossTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinToss.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoinToss";
-			};
-			name = Debug;
-		};
-		97566C672B2B24AC002DFA75 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2V4975L824;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.lilossa.CoinTossTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinToss.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoinToss";
-			};
-			name = Release;
-		};
 		97566C812B2B2595002DFA75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -563,7 +469,7 @@
 				INFOPLIST_FILE = CoinTossWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CoinTossWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -591,7 +497,7 @@
 				INFOPLIST_FILE = CoinTossWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CoinTossWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -624,15 +530,6 @@
 			buildConfigurations = (
 				97566C632B2B24AC002DFA75 /* Debug */,
 				97566C642B2B24AC002DFA75 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		97566C652B2B24AC002DFA75 /* Build configuration list for PBXNativeTarget "CoinTossTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				97566C662B2B24AC002DFA75 /* Debug */,
-				97566C672B2B24AC002DFA75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
